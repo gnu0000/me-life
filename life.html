@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Life-a</title>
+      <link type="text/css" rel="stylesheet" href="life.css" />
+      <script type="text/javascript" src="/js/jquery.min.js"></script>
+      <script type="text/javascript" src="life.js"></script>
+   </head>
+     
+   <body>
+      <div id="maincontainer">
+         <canvas class="petridish" id="petridish" width="1920" height="1200">
+            If you can see this, you need a new browser..
+         </canvas>
+      </div>
+      <div id="set-rule">
+         New Rule: <input type="text" id="rule" /><br>
+         <small>try: B3/S23, B36/S23, B1/S12, B2/S0, B23/S0</small>
+      </div>
+      <div id="help">
+         <pre>
+  Editing Keys<hr />
+  [h]        - Toggle this help window
+  [esc]      - Toggle screen pause
+  [space]    - Toggle cell under cursor
+  [shft]     - Select a block
+  [arrows]   - Move cursor
+  [c]        - Clear the screen
+  [f]        - Toggle frames/second window
+  [m]        - Toggle cell draw method
+  [n]        - New screen
+  [p]        - Paste selection
+  [r]        - Remove simple static structures
+  [s]        - Single step
+  [u]        - Set Automation Rule
+  [a]        - Toggle auto-remove simple static structures
+  [+-]       - Increase/decrease cell size
+  [shft][+-] - Speed up/Slow down
+  [shft]#    - Copy selection to buffer #
+  #          - Paste selection selection saved to buffer #  
+  [f]        - Show frames per second
+         </pre>
+      </div>
+      <div id="fps">
+        FPS
+        <hr />
+        <span>0</span>
+      </div>
+      
+      <div id="debug-info"></div>
+   </body>
+</html>
+
+
+
